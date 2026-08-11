@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keziah Dorothy A G — Computer Science Engineering portfolio">
+  <title>Keziah Dorothy A G | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="bg-orb orb-three"></div>
+
+  <header class="nav glass">
+    <a class="brand" href="#home"><span>K</span>eziah <span>D</span>orothy</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="icon-btn" title="Toggle theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> CSE Student • Developer • Builder</div>
+        <h1>Hi, I'm </h1>
+        <h1><span>Keziah Dorothy A G</span></h1>
+        <div class="hero-actions">
+  <a class="btn primary" href="#projects">Explore my work <span>↗</span></a>
+
+  <a class="btn secondary"
+     href="https://www.linkedin.com/in/keziah-dorothy-a-g-264961355"
+     target="_blank"
+     rel="noreferrer">
+    LinkedIn ↗
+  </a>
+
+  <a class="btn secondary"
+     href="https://github.com/keziahdorothy14"
+     target="_blank"
+     rel="noreferrer">
+    GitHub ↗
+  </a>
+</div>
+        <div class="mini-stats">
+          <div><strong>15+</strong><small>Skills explored</small></div>
+          <div><strong>∞</strong><small>Ideas to build</small></div>
+          <div><strong>∞</strong><small>CSE journey</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual glass tilt-card">
+        <div class="image-frame">
+          <img
+            src="assets/profile.jpg"
+            alt="Keziah Dorothy A G"
+            class="profile-image"
+          >
+        </div>
+        <div class="floating-card fc-one">⌁ Creative problem solving</div>
+        <div class="floating-card fc-two">⌘ Flutter + Python</div>
+        <div class="glass-label">KEZIAH / PORTFOLIO</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <span></span>
+        <div><p class="kicker">A little about me</p><h2>Curious mind. <em>Builder's heart.</em></h2></div>
+      </div>
+      <div class="about-grid">
+        <article class="glass about-card">
+          <p>I'm a Computer Science Engineering student focused on learning by building. My projects span web development, Flutter applications, AI-assisted tools and data structures.</p>
+          <p>I enjoy turning an idea into a usable interface, experimenting with technologies, and continuously improving my technical foundation.</p>
+          <div class="quote">“Build it. Understand it. Improve it.”</div>
+        </article>
+        <div class="timeline">
+          <div class="timeline-item glass"><span class="dot"></span><div><small>EDUCATION</small><h3>Computer Science Engineering</h3><p>Anna University | Kings Engineering College (2024 - 2028)</p></div></div>
+          <div class="timeline-item glass"><span class="dot"></span><div><small>FOCUS</small><h3>Software & Application Development</h3><p>Flutter • Python • Web • AI</p></div></div>
+          <div class="timeline-item glass"><span class="dot"></span><div><small>GOAL</small><h3>Keep learning through real projects</h3><p>From prototypes to polished products</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <span></span>
+        <div><p class="kicker">My toolkit</p><h2>Skills that turn <em>ideas into interfaces.</em></h2></div>
+      </div>
+      <div class="skills-wrap glass">
+        <div class="skill-group">
+          <h3>Development</h3>
+          <div class="chips">
+            <button class="chip">Flutter</button><button class="chip">Dart</button><button class="chip">Python</button>
+            <button class="chip">Java</button><button class="chip">HTML</button><button class="chip">CSS</button>
+            <button class="chip">JavaScript</button><button class="chip">FastAPI</button>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Data & Tools</h3>
+          <div class="chips">
+            <button class="chip">DSA</button><button class="chip">MySQL</button><button class="chip">Firebase</button>
+            <button class="chip">Git</button><button class="chip">Figma</button><button class="chip">REST APIs</button>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Interests</h3>
+          <div class="chips">
+            <button class="chip">AI</button><button class="chip">Mobile Apps</button><button class="chip">Web Development</button>
+            <button class="chip">UI/UX</button><button class="chip">Problem Solving</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <span></span>
+        <div><p class="kicker">Selected work</p><h2>Things I've been <em>building.</em></h2></div>
+      </div>
+      <div class="project-controls">
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="flutter">Flutter</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ai">AI</button>
+        </div>
+        <span id="projectCount">6 projects</span>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project glass" data-category="ai">
+          <div class="project-top"><span>01 / AI</span><b>↗</b></div>
+          <h3>AI Interview Coach</h3>
+          <p>Interview preparation concept with resume parsing, AI-generated questions and evaluation through a FastAPI backend and Flutter frontend.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>Flutter</span><span>LLM</span></div>
+        </article>
+        <article class="project glass" data-category="flutter">
+          <div class="project-top"><span>02 / MOBILE</span><b>↗</b></div>
+          <h3>LangBuddy</h3>
+          <p>Language-learning companion with vocabulary, daily phrases, pronunciation, quizzes and interactive games, designed for offline progress.</p>
+          <div class="tags"><span>Flutter</span><span>Dart</span><span>SharedPreferences</span><span>TTS</span></div>
+        </article>
+        <article class="project glass" data-category="flutter">
+          <div class="project-top"><span>03 / MOBILE</span><b>↗</b></div>
+          <h3>SkillSprint</h3>
+          <p>A skill-development app concept with lessons, progress tracking, animations and a device-aware theme experience.</p>
+          <div class="tags"><span>Flutter</span><span>Dart</span><span>UI/UX</span></div>
+        </article>
+        <article class="project glass" data-category="flutter">
+          <div class="project-top"><span>04 / MOBILE</span><b>↗</b></div>
+          <h3>FlashSprint</h3>
+          <p>DSA flashcard app concept using spaced repetition, review modes, persistence and optional cloud synchronization.</p>
+          <div class="tags"><span>Flutter</span><span>DSA</span><span>Hive</span><span>Firebase</span></div>
+        </article>
+        <article class="project glass" data-category="flutter">
+          <div class="project-top"><span>05 / SOCIAL</span><b>↗</b></div>
+          <h3>Social Media Platform</h3>
+          <p>Social-media application concept with feed, post creation, chat, notifications, profile and settings experiences.</p>
+          <div class="tags"><span>Flutter</span><span>SharedPreferences</span><span>Image Picker</span></div>
+        </article>
+        <article class="project glass" data-category="web">
+          <div class="project-top"><span>06 / WEB</span><b>↗</b></div>
+          <h3>Department Website</h3>
+          <p>A multi-page college CSE department website concept covering courses, faculty, placements, alumni, achievements and contact.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive UI</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card glass">
+        <p class="kicker"> LET'S CONNECT </p>
+        <h2>Have an idea?<br><em>Let's build something.</em></h2>
+        <p>For opportunities, collaborations or project conversations, connect with me on LinkedIn.</p>
+        <a class="btn primary" href="https://www.linkedin.com/in/keziah-dorothy-a-g-264961355" target="_blank" rel="noreferrer">Open LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Keziah Dorothy A G</span>
+    <span>Designed & built with curiosity.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
