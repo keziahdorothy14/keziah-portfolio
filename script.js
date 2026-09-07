@@ -17,6 +17,10 @@ const nav=document.getElementById('navLinks');
 menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
+document.querySelectorAll('.milestone-item').forEach(item=>{
+  item.addEventListener('click',()=>item.classList.toggle('is-active'));
+});
+
 const filters=document.querySelectorAll('.filter');
 const projects=[...document.querySelectorAll('.project')];
 const count=document.getElementById('projectCount');
