@@ -41,8 +41,20 @@ if(window.matchMedia('(pointer:fine)').matches){
   card.addEventListener('mouseleave',()=>card.style.transform='');
 }
 
-// Reveal-on-scroll
+// Professional reveal-on-scroll with a subtle stagger
+const revealItems=[...document.querySelectorAll('.section > *, .project, .interest-card')];
+revealItems.forEach((item,index)=>{
+  item.classList.add('reveal-item');
+  item.style.setProperty('--reveal-delay',`${(index%4)*70}ms`);
+});
+
 const reveal=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:0,transform:'translateY(22px)'},{opacity:1,transform:'translateY(0)'}],{duration:650,easing:'cubic-bezier(.2,.8,.2,1)',fill:'forwards'});reveal.unobserve(e.target)}})
-},{threshold:.08});
-document.querySelectorAll('.section > *, .project').forEach(el=>{el.style.opacity='0';reveal.observe(el)});
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('is-visible');
+      reveal.unobserve(entry.target);
+    }
+  });
+},{threshold:.12,rootMargin:'0px 0px -40px'});
+
+revealItems.forEach(item=>reveal.observe(item));
